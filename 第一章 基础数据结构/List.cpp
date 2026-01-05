@@ -108,27 +108,3 @@ public:
 private:
 	QNode<T> node;
 };
-
-
-int main() {
-	List<int> list;
-	queue<int> queue;
-	list.push_back(1);
-	list.push_back(2);
-	list.push_back(3);
-	list.push_front(0);
-	list.foreach();
-	queue.push(1);
-	queue.push(2);
-	int res;
-	queue.pop(res);
-	std::cout << res << std::endl;
-	std::cout << queue.front() << std::endl;
-	queue.push(3);
-	queue.push(4);
-	queue.push(5);
-	queue.push(6);
-	queue.pop(res);
-	queue.foreach();
-	return 0;
-}
