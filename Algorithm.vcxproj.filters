@@ -15,7 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="第一章 基础数据结构\List.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
