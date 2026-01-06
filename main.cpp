@@ -1,9 +1,11 @@
-#include <iostream>
-#include "µÚÒ»ÕÂ »ù´¡Êı¾İ½á¹¹/List.cpp"
-#include "µÚÒ»ÕÂ »ù´¡Êı¾İ½á¹¹/Stack.cpp"
+ï»¿#include <iostream>
+#include "ç¬¬ä¸€ç«  åŸºç¡€æ•°æ®ç»“æ„/List.cpp"
+#include "ç¬¬ä¸€ç«  åŸºç¡€æ•°æ®ç»“æ„/Stack.cpp"
+#include "ç¬¬ä¸€ç«  åŸºç¡€æ•°æ®ç»“æ„/Tree.cpp"
+
 
 int main() {
-	// µ¥Ôª²âÊÔ
+	// å•å…ƒæµ‹è¯•
 	{
 		List<int> list;
 		queue<int> queue;
@@ -42,6 +44,21 @@ int main() {
 			std::cout << s2q.pop() << std::endl;
 		}
 		std::cout << s2q.empty() << std::endl;
+	}
+
+
+	{
+		Tree<int> tree;
+		int a[] = { 6,4,8,2,5,7,9,1,3 };
+		for (int i = 0; i < 9; ++i) {
+			tree.insert(a[i]);
+		}
+		tree.foreach();
+		std::cout << "\n" << tree.height() << std::endl;
+		std::cout << tree.weight();
+		tree.erase(3);
+		tree.foreach();
+	
 	}
 	return 0;
 }
