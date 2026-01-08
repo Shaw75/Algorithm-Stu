@@ -89,7 +89,7 @@ private:
 				node->right = erase(node->right, curr->data);
 				
 			}
-		}
+		} 
 		return node;
 	}
 

@@ -1,7 +1,8 @@
 ﻿#include <iostream>
-#include "第一章 基础数据结构/List.cpp"
-#include "第一章 基础数据结构/Stack.cpp"
-#include "第一章 基础数据结构/Tree.cpp"
+#include "第一章 基础数据结构/list.cpp"
+#include "第一章 基础数据结构/stack.cpp"
+#include "第一章 基础数据结构/tree.cpp"
+#include "第一章 基础数据结构/priority_queue.cpp"
 
 
 int main() {
@@ -55,10 +56,22 @@ int main() {
 		}
 		tree.foreach();
 		std::cout << "\n" << tree.height() << std::endl;
-		std::cout << tree.weight();
+		std::cout << tree.weight() ;
 		tree.erase(3);
 		tree.foreach();
-	
+		std::cout << "\n";
+	}
+	{
+		priority_queue q;
+		q.push(5);
+		q.push(6);
+		q.push(7);
+		q.push(3);
+		q.push(2);
+		q.push(1);
+		q.foreach();
+		q.pop();
+		q.foreach();
 	}
 	return 0;
 }

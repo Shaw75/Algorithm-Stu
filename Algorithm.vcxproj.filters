@@ -1,9 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="第一章 基础数据结构\List.cpp" />
-    <ClCompile Include="第一章 基础数据结构\Stack.cpp" />
+    <ClCompile Include="第一章 基础数据结构\list.cpp" />
+    <ClCompile Include="第一章 基础数据结构\stack.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="第一章 基础数据结构\Tree.cpp" />
+    <ClCompile Include="第一章 基础数据结构\tree.cpp" />
+    <ClCompile Include="第一章 基础数据结构\priority_queue.cpp" />
   </ItemGroup>
 </Project>
