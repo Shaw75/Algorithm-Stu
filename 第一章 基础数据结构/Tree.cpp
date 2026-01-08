@@ -1,8 +1,6 @@
 #include <iostream>
 #include <queue>
 
-
-
 template <typename T>
 class Tree {
 private:
