@@ -1,10 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="第一章 基础数据结构\list.cpp" />
-    <ClCompile Include="第一章 基础数据结构\stack.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="第一章 基础数据结构\tree.cpp" />
-    <ClCompile Include="第一章 基础数据结构\priority_queue.cpp" />
+    <ClCompile Include="第一章 基础数据结构\stack.cpp">
+      <Filter>第一章 基本数据结构</Filter>
+    </ClCompile>
+    <ClCompile Include="第一章 基础数据结构\tree.cpp">
+      <Filter>第一章 基本数据结构</Filter>
+    </ClCompile>
+    <ClCompile Include="第一章 基础数据结构\priority_queue.cpp">
+      <Filter>第一章 基本数据结构</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>第一章 基本数据结构</Filter>
+    </ClCompile>
+    <ClCompile Include="第一章 基础数据结构\list.cpp">
+      <Filter>第一章 基本数据结构</Filter>
+    </ClCompile>
+    <ClCompile Include="第二章 基本算法\two_pointers.cpp">
+      <Filter>第二章 基本算法</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="第一章 基本数据结构">
+      <UniqueIdentifier>{5e8831cf-773c-4c6e-922f-983a33935ffb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="第二章 基本算法">
+      <UniqueIdentifier>{e8e32b90-e88d-4287-8605-7568e3410c9c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
 </Project>

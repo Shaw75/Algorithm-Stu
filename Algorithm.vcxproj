@@ -24,6 +24,7 @@
     <ClCompile Include="第一章 基础数据结构\priority_queue.cpp" />
     <ClCompile Include="第一章 基础数据结构\stack.cpp" />
     <ClCompile Include="第一章 基础数据结构\tree.cpp" />
+    <ClCompile Include="第二章 基本算法\two_pointers.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
