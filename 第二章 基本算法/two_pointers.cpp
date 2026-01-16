@@ -2,6 +2,7 @@
 #include <unordered_set>
 #include <algorithm>
 #include <string>
+#include <array>
 using namespace std;
 
 class Solution {
@@ -36,12 +37,35 @@ public:
 class Solution5 {
 public:
     string longestPalindrome(string s) {
-        int size = s.size();
-        if (size <= 1) return s;
-        // 大窗口
-        for (int i = 1; i < size; ++i) {
+        int n = (int)s.size();
+        if (n == 0) return s;
 
+        array<int, 2> best{ 0, 0 }; // [L, R]
+
+        for (int i = 0; i < n; ++i) {          // 关键：从 0 开始
+            i = findLongest(s, i, best);
         }
 
+        return s.substr(best[0], best[1] - best[0] + 1); // len = R-L+1
+    }
+
+    static int findLongest(const string& s, int low, array<int, 2>& best) {
+        int n = (int)s.size();
+        int high = low;
+
+        // 吞掉右侧连续相同字符（处理偶数回文的关键）
+        while (high < n - 1 && s[low] == s[high + 1]) ++high;
+        int ans = high;
+
+        // 向两边扩展
+        while (low > 0 && high < n - 1 && s[low - 1] == s[high + 1]) {
+            --low; ++high;
+        }
+
+        if (high - low > best[1] - best[0]) {
+            best[0] = low;
+            best[1] = high;
+        }
+        return ans;
     }
 };
